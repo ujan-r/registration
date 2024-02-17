@@ -1,0 +1,43 @@
+body {
+    font-family: system-ui, sans-serif;
+}
+
+header {
+    top: 0;
+    padding: 10px max(5%, 20px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    column-gap: 50px;
+    position: sticky;
+    text-align: center;
+}
+
+.nav-links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.nav-link a {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 200ms ease-in;
+}
+
+.nav-link:not(.active):hover a, .nav-link a:focus {
+    font-weight: 400;
+    transition: 200ms;
+    color: darkcyan;
+}
+
+.active a {
+    cursor: default;
+    color: darkcyan;
+    font-weight: bold;
+}
