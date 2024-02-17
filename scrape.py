@@ -76,5 +76,5 @@ for i in range(1, 26):
         classes.append(Class(title, subject, code, section, hours, CRN, term, session, instructor, times, campus, full, attribute))
 
 
-with open('data/classes.json', 'w') as file:
+with open('docs/classes.json', 'w') as file:
     file.write('[' + ','.join(c.to_json() for c in classes) + ']\n')
