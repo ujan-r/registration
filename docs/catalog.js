@@ -35,7 +35,7 @@ courses.forEach(c => {
 
     li.innerHTML =
             `<p class="title"><strong>${c.title}</strong></p>
-            <p class="code">${c.subject} ${c.code}</p>
+            <p class="code"><em>${c.subject} ${c.code}</em></p>
             <p class="credits">${hours}</p>`
 
     cardList.appendChild(li);
