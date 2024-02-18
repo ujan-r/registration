@@ -1,10 +1,11 @@
 body {
     font-family: system-ui, sans-serif;
+    padding: 0 max(5%, 20px);
 }
 
 header {
+    background-color: white;
     top: 0;
-    padding: 10px max(5%, 20px);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -30,14 +31,12 @@ header {
     transition: 200ms ease-in;
 }
 
-.nav-link:not(.active):hover a, .nav-link a:focus {
-    font-weight: 400;
-    transition: 200ms;
+.nav-link:hover a, .nav-link a:focus {
     color: darkcyan;
 }
 
 .active a {
     cursor: default;
-    color: darkcyan;
+    /* color: darkcyan; */
     font-weight: bold;
 }
