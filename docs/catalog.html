@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Classes</title>
+    <title>Catalog</title>
 </head>
 <body>
     <header>
-        <h1 class="bold-on-hover" data-text="Registration Helper"><b>Registration Helper</b></h1>
+        <h1><b>Registration Helper</b></h1>
         <nav class="navbar">
             <ul class="nav-links">
                 <li class="nav-link">
@@ -23,18 +23,9 @@
             </ul>
         </nav>
     </header>
-    <div id="tableContainer">
-        <table id="classTable">
-            <thead>
-                <tr>
-                    <th>Subject</th>
-                    <th>Code</th>
-                    <th>Title</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
+    <ul class="card-container" id="classCards">
+        <!-- classes populated by JavaScript -->
+    </ul>
 </body>
-<script src="catalog.js"></script>
+<script src="index.js"></script>
 </html>

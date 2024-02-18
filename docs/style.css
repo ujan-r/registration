@@ -14,6 +14,8 @@ header {
     column-gap: 50px;
     position: sticky;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .nav-links {
@@ -39,4 +41,25 @@ header {
     cursor: default;
     /* color: darkcyan; */
     font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+
+    /* Hide those pesky bullet points. */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 5px 20px;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+    /* background-color: randomly generated with JavaScript */
 }
