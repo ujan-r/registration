@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
-
+import json
 
 URLs = []
 with open('hyperlinks.txt') as file:
@@ -63,7 +62,10 @@ for htmlText in htmlDataList:
     print("Values:", list(classDictionary.values()))
     print(classDictionary)
     '''
-    print(classDictionary)
+
+with open('outputClassList.txt', 'w') as file:
+    file.write (json.dumps(classDictionary))
+
 
 
     
