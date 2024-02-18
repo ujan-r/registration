@@ -1,7 +1,7 @@
 const table = document.getElementById("classTable");
 const tbody = table.getElementsByTagName("tbody")[0];
 
-const classes = fetch("classes.json").then(response => response.json);
+const classes = fetch("./classes.json").then(response => response.json);
 
 let seen = Object.create(null);
 const courses = classes.filter(c => {
