@@ -1,7 +1,15 @@
 const table = document.getElementById("classTable");
 const tbody = table.getElementsByTagName("tbody")[0];
 
-const classes = fetch("classes.json").then(response => response.json);
+function loadJSON(path) {
+    let xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open("GET", path, async=false);
+    xobj.send(null);
+    return JSON.parse(xobj.responseText);
+}
+
+const classes = loadJSON("https://ujan-r.github.io/registration/classes.json");
 
 let seen = Object.create(null);
 const courses = classes.filter(c => {
