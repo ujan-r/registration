@@ -63,3 +63,27 @@ header {
     overflow: scroll;
     /* background-color: randomly generated with JavaScript */
 }
+
+#schedule {
+    z-index: 1;
+    background-color: white;
+    padding: 5px;
+    position: sticky;
+    bottom: 0;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#search-bar {
+    position: fixed;
+    width: 50%;
+    /* height: 50px; */
+    padding: 10px;
+    font-size: x-large;
+}

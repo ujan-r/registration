@@ -12,7 +12,7 @@ const classes = loadJSON("https://ujan-r.github.io/registration/classes.json");
 
 let seen = Object.create(null);
 const courses = classes.filter(c => {
-    let key = `${c.subject} ${c.code}`;
+    let key = `${c.subject} ${c.code} ${c.title}`;
     if (!seen[key]) {
         seen[key] = true;
         return true;

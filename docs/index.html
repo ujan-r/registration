@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Registration Helper</title>
+    <title>Class Crush</title>
 </head>
 <body>
     <header>
-        <h1><b>Registration Helper</b></h1>
+        <h1><b>Class Crush</b></h1>
         <nav class="navbar">
             <ul class="nav-links">
                 <li class="nav-link active">
@@ -23,6 +23,15 @@
             </ul>
         </nav>
     </header>
-    <p>Hello, world!</p>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for classes..." autofocus>
+    </div>
+    <ul class="card-container" id="classCards">
+        <!-- classes populated by JavaScript -->
+    </ul>
+    <div id="schedule">
+        <p><b>Credits selected: </b><span id="credit-count">0</span></p>
+    </div>
 </body>
+<script src="index.js"></script>
 </html>
